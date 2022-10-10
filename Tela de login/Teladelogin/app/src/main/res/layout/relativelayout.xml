@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpapersden_com_cool_4k_pattern_3840x2160"
+    android:textAlignment="center">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="220dp"
+        android:layout_height="92dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="114dp"
+        android:layout_marginTop="109dp"
+        android:layout_marginEnd="76dp"
+        android:fontFamily="sans-serif-medium"
+        android:hint="Login"
+        android:text="LOGIN"
+        android:textColor="#FFFFFF"
+        android:textSize="60sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/usuarioCadastro"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="180dp"
+        android:background="@android:color/holo_orange_dark"
+        android:drawableLeft="@drawable/ic_launcher_foreground"
+        android:drawablePadding="0dp"
+        android:hint="Usuário"
+        android:textColorHint="#9C27B0"
+        android:textSize="20sp" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/senhaCadastro"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/usuarioCadastro"
+        android:layout_marginTop="40dp"
+        android:background="@color/material_dynamic_primary50"
+        android:drawableLeft="@drawable/ic_baseline_lock_24"
+        android:drawablePadding="0dp"
+        android:hint="Senha"
+        android:paddingLeft="30dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/buttonCadastro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/senhaCadastro"
+        android:layout_marginTop="50dp"
+        android:background="@android:color/holo_green_light"
+        android:text="Entrar" />
+
+    <Button
+        android:id="@+id/registrarLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonCadastro"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="Registrar" />
+
+</RelativeLayout>

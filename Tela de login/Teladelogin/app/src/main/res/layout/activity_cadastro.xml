@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpapersden_com_cool_4k_pattern_3840x2160"
+    tools:context=".Cadastro">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="99dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="102dp"
+        android:layout_marginEnd="50dp"
+        android:fontFamily="sans-serif-medium"
+        android:hint="Login"
+        android:text="CADASTRO"
+        android:textColor="#FFFFFF"
+        android:textSize="45sp"
+        android:gravity="center" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/usuarioCadastro"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="150dp"
+        android:background="#F93C00"
+        android:drawableLeft="@drawable/ic_launcher_foreground"
+        android:drawablePadding="0dp"
+        android:hint="Usuário"
+        android:textColorHint="#9C27B0"
+        android:textSize="20sp"
+
+        />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/emailCadastro"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/usuarioCadastro"
+        android:layout_marginTop="40dp"
+        android:background="#FEE900"
+        android:backgroundTint="#EAD200"
+        android:drawableLeft="@drawable/ic_launcher_foreground"
+        android:drawablePadding="0dp"
+        android:hint="E-mail"
+        android:textColorHint="#9C27B0"
+        android:textSize="20sp" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/senhaCadastro"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/emailCadastro"
+        android:layout_marginTop="40dp"
+        android:background="#1184E9"
+        android:drawableLeft="@drawable/ic_baseline_lock_24"
+        android:drawablePadding="0dp"
+        android:hint="Senha"
+        android:paddingLeft="30dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/buttonCadastro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/senhaCadastro"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#AA47BA"
+        android:text="Cadastrar" />
+
+</RelativeLayout>
